@@ -56,6 +56,12 @@ public class PipeManager : MonoBehaviour
 
     }
 
+    public void SetPipeSpeed(float speed)
+    {
+        pipeSpeed = speed;
+        Pipe.globalSpeed = speed;
+    }
+
     public Pipe SpawnPipe()
     {
         //Créer un nouveau pipe
