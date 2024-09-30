@@ -6,18 +6,27 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public int score = 0;
+    public int _score = 0;
+    public int MyScore
+    {
+        get => _score;
+        set
+        {
+            _score = value;
+            scoreSlot.text = prefix + _score.ToString();
+        }
+    }
+
 
     public TextMeshProUGUI scoreSlot;
     public string prefix = "Score : ";
     private void Awake()
     {
-        scoreSlot.text = prefix + score.ToString();
+        MyScore = 0;
     }
 
     public void AddScore(int pScore = 1)
     {
-        score += pScore;
-        scoreSlot.text = prefix + score.ToString();
+        MyScore += pScore;
     }
 }

@@ -4,12 +4,12 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
-//TODO : Require component
-//TODO : Init component
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(CircleCollider2D))]
 public class Bird : MonoBehaviour
 {
-    public Rigidbody2D rigidBody = null;
-    public CircleCollider2D circleCollider = null;
+    private Rigidbody2D rigidBody = null;
+    private CircleCollider2D circleCollider = null;
 
     public UnityEvent onScore;
 
@@ -23,6 +23,9 @@ public class Bird : MonoBehaviour
 
     private void Awake()
     {
+        rigidBody = gameObject.GetComponent<Rigidbody2D>();
+        circleCollider = gameObject.GetComponent<CircleCollider2D>();
+
         IsAlive = true;
         HasStart = false;
 
