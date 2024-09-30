@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: F_PixelMix SDF
+  m_Name: FA_PixelMixBold SDF
   m_EditorClassIdentifier: 
-  hashCode: 728666652
-  material: {fileID: 8314117765635282120}
-  materialHashCode: -67921092
+  hashCode: 0
+  material: {fileID: 8286835073680539069}
+  materialHashCode: 0
   m_Version: 1.1.0
-  m_SourceFontFileGUID: 3155ec39ba650014aa2ebefe61e83fcd
-  m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 3155ec39ba650014aa2ebefe61e83fcd, type: 3}
-  m_SourceFontFile: {fileID: 12800000, guid: 3155ec39ba650014aa2ebefe61e83fcd, type: 3}
+  m_SourceFontFileGUID: 1b2a391adc178914096af50fdf56e62b
+  m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 1b2a391adc178914096af50fdf56e62b, type: 3}
+  m_SourceFontFile: {fileID: 12800000, guid: 1b2a391adc178914096af50fdf56e62b, type: 3}
   m_AtlasPopulationMode: 1
   m_FaceInfo:
     m_FaceIndex: 0
-    m_FamilyName: pixelmix
+    m_FamilyName: pixelmix bold
     m_StyleName: Regular
     m_PointSize: 90
     m_Scale: 1
@@ -37,7 +37,7 @@ MonoBehaviour:
     m_SuperscriptSize: 0.5
     m_SubscriptOffset: 0
     m_SubscriptSize: 0.5
-    m_UnderlineOffset: 6.6796875
+    m_UnderlineOffset: 6.767578
     m_UnderlineThickness: 4.482422
     m_StrikethroughOffset: 22.8
     m_StrikethroughThickness: 4.482422
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_GlyphTable: []
   m_CharacterTable: []
   m_AtlasTextures:
-  - {fileID: 6962912593328785944}
+  - {fileID: 4042198895813521471}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_ClearDynamicDataOnBuild: 0
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_FallbackFontAssetTable: []
   m_CreationSettings:
     sourceFontFileName: 
-    sourceFontFileGUID: 3155ec39ba650014aa2ebefe61e83fcd
+    sourceFontFileGUID: 1b2a391adc178914096af50fdf56e62b
     pointSizeSamplingMode: 0
     pointSize: 90
     padding: 9
@@ -121,7 +121,7 @@ MonoBehaviour:
     italicTypeface: {fileID: 0}
   - regularTypeface: {fileID: 0}
     italicTypeface: {fileID: 0}
-  - regularTypeface: {fileID: 11400000, guid: bbe7f4218896d5248b262ed8782dbc5c, type: 2}
+  - regularTypeface: {fileID: 0}
     italicTypeface: {fileID: 0}
   - regularTypeface: {fileID: 0}
     italicTypeface: {fileID: 0}
@@ -134,13 +134,13 @@ MonoBehaviour:
   boldSpacing: 7
   italicStyle: 35
   tabSize: 10
---- !u!28 &6962912593328785944
+--- !u!28 &4042198895813521471
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: F_PixelMix Atlas
+  m_Name: FA_PixelMixBold Atlas
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -182,14 +182,14 @@ Texture2D:
     offset: 0
     size: 0
     path: 
---- !u!21 &8314117765635282120
+--- !u!21 &8286835073680539069
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: F_PixelMix Atlas Material
+  m_Name: FA_PixelMixBold Atlas Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -218,7 +218,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 6962912593328785944}
+        m_Texture: {fileID: 4042198895813521471}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:

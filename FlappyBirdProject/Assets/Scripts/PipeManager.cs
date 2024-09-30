@@ -11,27 +11,21 @@ public class PipeManager : MonoBehaviour
 
     public float tarvelDistance = 0f;
 
-    public float pipeSpeed = 1f;
     public float pipeDistance = 5f;
     public float pipeHeightVariation = 2f;
 
     public Transform pipeSpawnPosition;
     public Transform pipeDestructPosition;
 
-    void Start()
+    private void Start()
     {
-        Pipe.globalSpeed = pipeSpeed;
-    }
-
-    private void OnValidate()
-    {
-        Pipe.globalSpeed = pipeSpeed;
+        pipesList.Add(SpawnPipe());
     }
 
     void Update()
     {
         //Move all pipes
-        tarvelDistance += pipeSpeed * Time.deltaTime;
+        tarvelDistance += Pipe.globalSpeed * Time.deltaTime;
         foreach (Pipe pipe in pipesList)
         {
             pipe.Move(Time.deltaTime);
@@ -54,12 +48,6 @@ public class PipeManager : MonoBehaviour
             }
         }
 
-    }
-
-    public void SetPipeSpeed(float speed)
-    {
-        pipeSpeed = speed;
-        Pipe.globalSpeed = speed;
     }
 
     public Pipe SpawnPipe()

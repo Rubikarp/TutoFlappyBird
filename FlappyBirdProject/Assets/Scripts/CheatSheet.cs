@@ -150,7 +150,7 @@ public class CheatSheet : MonoBehaviour
     // Method Overloading (methods with the same name but different parameters)
     public void MethodOverload(int value) { }
     // Optional Parameters (parameters with default values)
-    public void MethodOverload(int value, string text = "defaultValue") { }
+    public void MethodOverload(Vector2 value, string text = "defaultValue") { }
 
     // Static Method (can be called without an instance of the class)
     public static void StaticMethod() { }
